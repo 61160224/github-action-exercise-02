@@ -5,6 +5,9 @@ const app = express()
 app.get('/', (req, res) => {
     res.send('Hello world!!!')
 })
+app.get('/users', (req, res) => {
+    res.send('No user in the system')
+})
 
 app.listen(port, () => {
     console.log('The app is up and running!')
